@@ -75,28 +75,14 @@ var pantalla = document.querySelector("canvas");
 
     function pasarValorMobil(e){
         valorMobil = e.srcElement.value;
-    //     letraPresionada = valorMobil;
-    //     evaluarletraMobil = isNaN(valorMobil);
-    //     console.log(evaluarletraMobil);
-    //     console.log(valorMobil);
-    //     if(evaluarletraMobil){
-    //         console.log("Valor mobil es: " + valorMobil);
-    //         evaluarLetras();
-    //         mostrarLetrasPresionadas(valorMobil);
-    //         inputMobil.value = '';
-    //     } else if(evaluarletraMobil == false){
-    //         alert("Presiono un numero, dato invalido");
-    //     }
     }
 
     document.addEventListener("keyup", function   //tecla que se preciona en el documento
     (event){
         
-        if(booleanaFinalizar == false /* && inputMobil.value == ""*/){
-            // letraPresionada = event.key;
+        if(booleanaFinalizar == false){
             letraPresionada = valorMobil.toLowerCase();
             evaluarLetraoNumero = isNaN(letraPresionada);
-            //console.log(letraPresionada);
             if(evaluarLetraoNumero){
                 evaluarLetras();
                 inputMobil.value = '';
