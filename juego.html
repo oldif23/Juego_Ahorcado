@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/Vector.png" type="image/x-icon">
+    <title>Desafio Encriptador</title>
+</head>
+<body>
+    <header class="cabecera">
+        <img class="logo-alura" src="img/Vector.png" alt="Logo Alura">
+    </header>
+
+    <main class="principal">
+        <section class="contenido-principal">
+            <div class="dibujo">
+                <canvas class="canvas_1" width="1200" height="800"></canvas>
+            </div>
+
+            <div class="input-mobil">
+                <input type="text" ng-blur="EnfocarSiempre()" onblur="this.focus()" class="texto-mobil" id="enfocarTeclado"  maxlength="1">
+            </div>
+
+            <div class="div-juego">
+                <p class="frase"></p>
+                
+                <p class="letras-usadas"></p>
+                <p class="mensaje-alerta"></p>
+                </div>
+            </div>
+            <div class="contenedor-botones">
+                <input type="button"  class="nuevo-juego" id="nuevoJ" value="Nuevo Juego">
+                <input type="button" value="Desistir" class="desistir-juego"  id="desistir">
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="pie-pagina">
+        <p class="texto-footer"><span>Creado por Kevin Degrandez </span> &copy;Copyright Alura Latam - 2022.</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

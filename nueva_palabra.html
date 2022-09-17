@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilo_principal.css">
+    <link rel="shortcut icon" href="img/Vector.png" type="image/x-icon">
+    <title>Nueva Palabra</title>
+</head>
+<body>
+    <header class="cabecera">
+        <img class="logo-alura" src="img/Vector.png" alt="Logo Alura">
+    </header>
+
+    <nav class="navegador">
+        
+    </nav>
+
+    <main class="principal inicio">
+        <section class="contenido-principal inicio-agregar">
+            <div class="separar-nuevaP">
+                    <input type="text" id="nueva" class="input-nuevaP" placeholder="Ingrese una palabra" pattern="^[a-z]+$" maxlength="8" required>
+                
+                    
+                <div class="contenedor-botones">
+                <input type="button"  class="nuevaP" value="Guardar y empezar">
+                <div id="resultado"></div> 
+                <input type="button" class="cancelar-nuevaP" value="Cancelar">
+                </div>
+                
+            </div>
+
+                <p class="mensaje-validacion"></p>
+
+            
+        </section>
+
+    </main>
+
+    <footer class="pie-pagina">
+        <p class="texto-footer"><span>Creado por Kevin Degrandez </span> &copy;Copyright Alura Latam - 2022.</p>
+    </footer>
+    <script src="js/agregar_palabra.js"></script>
+</body>
+</html>
